@@ -1,0 +1,15 @@
+.location {
+    padding: 1rem 0rem;
+    text-align: center;
+    background-color: $bg_grey_dark;
+    &__icon{
+        color: rgb(47, 47, 47);
+        font-size: 1rem;
+    }
+    &__info{
+        color: rgb(47, 47, 47);
+        font-size: 0.9rem;
+        font-family: $text_font;
+        font-weight: bold;
+    }
+}

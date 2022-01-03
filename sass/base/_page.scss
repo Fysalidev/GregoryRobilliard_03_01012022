@@ -1,0 +1,22 @@
+* {  
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: $text_font;
+}
+
+li {
+    list-style: none;
+}
+
+main
+
+.page-title {
+    text-transform: uppercase;
+    font-family: $text_font;
+    font-size: 1rem;
+    align-items: flex-start;
+}

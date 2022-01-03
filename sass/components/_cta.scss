@@ -1,0 +1,11 @@
+.btn-cta {
+    display: block;
+    cursor: pointer;
+    font-family: $text_font;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 10rem;
+    background: rgb(147,86,220);
+    background: linear-gradient(230deg, rgba(147,86,220,1)20%, rgba(201,106,222,1) 65%, rgba(255,121,218,1) 100%);
+}

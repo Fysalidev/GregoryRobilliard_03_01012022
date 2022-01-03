@@ -1,0 +1,16 @@
+/* Utils */
+@import "./utils/variables";
+
+/* Components */
+@import "./components/cta";
+
+/* Base */
+@import "./base/page";
+
+/* layouts */
+@import "./layouts/header";
+@import "./layouts/location";
+@import "./layouts/reservation";
+@import "./layouts/restaurant-list";
+@import "./layouts/restaurant-card";
+@import "./layouts/footer";

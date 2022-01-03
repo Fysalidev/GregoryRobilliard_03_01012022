@@ -1,0 +1,10 @@
+.functioning-card{
+    &__number{
+        width: 1rem;
+        height: 1rem;
+        background-color: $primary;
+        color: white;
+        font-size: 1rem;
+        border-radius: 25rem;
+    }
+}
