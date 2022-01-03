@@ -1,15 +1,6 @@
-* {  
-    margin: auto;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    font-family: $text_font;
-}
-
-li {
-    list-style: none;
+.bloc_page {
+    max-width: 450px;
+    margin:auto;
 }
 
 section {
@@ -18,7 +9,7 @@ section {
 
 .page-title {
     text-transform: uppercase;
-    font-family: $text_font;
+    font-family: $ft-text;
     font-size: 1rem;
     align-items: flex-start;
 }

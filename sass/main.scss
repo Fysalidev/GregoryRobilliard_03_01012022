@@ -5,12 +5,16 @@
 @import "./components/cta";
 
 /* Base */
+@import "./base/reset";
 @import "./base/page";
 
 /* layouts */
 @import "./layouts/header";
-@import "./layouts/location";
-@import "./layouts/reservation";
-@import "./layouts/restaurant-list";
-@import "./layouts/restaurant-card";
 @import "./layouts/footer";
+
+/* Pages */
+@import "./pages/location";
+@import "./pages/reservation";
+@import "./pages/stepbystep";
+@import "./pages/restaurant-list";
+@import "./pages/restaurant-card";

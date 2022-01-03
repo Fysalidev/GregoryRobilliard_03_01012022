@@ -2,14 +2,14 @@
     padding: 1rem 0rem;
     text-align: center;
     background-color: $bg_grey_dark;
-    &__icon{
+    & i {
         color: rgb(47, 47, 47);
         font-size: 1rem;
     }
-    &__info{
+    & span {
         color: rgb(47, 47, 47);
         font-size: 0.9rem;
-        font-family: $text_font;
+        font-family: $ft-text;
         font-weight: bold;
     }
 }

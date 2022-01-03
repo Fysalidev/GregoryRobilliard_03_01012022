@@ -1,8 +1,9 @@
 .restaurant-card{
-    width: 100%;
+    display: block;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 10px 5px 5px gray;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
    
     &__img{
     width: 100%;
@@ -16,15 +17,19 @@
         justify-content: space-between;
         padding: 1rem;
 
+        &__titles{
+            width: 10rem;;
+        }
+
         &__titles h3{
-            font-family: $text_font;
+            font-family: $ft-text;
             color: black;
             font-size: 1rem;
             font-weight: bold;
         }
 
         &__titles h4{
-            font-family: $text_font;
+            font-family: $ft-text;
             color: black;
             font-size: 0.9rem;
             font-weight: lighter;

@@ -1,7 +1,7 @@
 /* Utils */
 /* Fonts */
-/* Page Colors */
-/* Background */
+/* Colors */
+/* Background Colors */
 /* Components */
 .btn-cta {
   display: block;
@@ -17,8 +17,8 @@
 
 /* Base */
 * {
-  margin: auto;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
@@ -28,6 +28,11 @@ a {
 
 li {
   list-style: none;
+}
+
+.bloc_page {
+  max-width: 450px;
+  margin: auto;
 }
 
 section {
@@ -42,27 +47,53 @@ section {
 }
 
 /* layouts */
-.header {
+header {
+  position: relative;
   padding: 0.6rem 0rem;
   text-align: center;
-  position: relative;
   z-index: 1000;
   box-shadow: 0px 2px rgba(28, 28, 28, 0.08);
 }
-.header__logo {
+header h1 {
   font-family: "Shrikhand", cursive;
 }
 
+footer {
+  background-color: #2f2f2f;
+  color: white;
+  padding: 1rem;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  padding-bottom: 0.32em;
+}
+footer li a {
+  font-size: 0.9rem;
+  color: white;
+}
+footer li a:hover {
+  font-weight: bold;
+}
+
+/* Pages */
 .location {
   padding: 1rem 0rem;
   text-align: center;
   background-color: #e7e7e7;
 }
-.location__icon {
+.location i {
   color: #2f2f2f;
   font-size: 1rem;
 }
-.location__info {
+.location span {
   color: #2f2f2f;
   font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
@@ -96,23 +127,25 @@ section {
   margin-bottom: 2rem;
 }
 
+.stepbystep {
+  display: block;
+}
+.stepbystep__step {
+  background-color: rbg(246, 245, 245);
+}
+
 .restaurant-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  display: block;
-  /*  & ul{
-       display: inherit;
-       & a{
-           display: inherit;
-       }
-   } */
 }
 
 .restaurant-card {
-  width: 100%;
+  display: block;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 10px 5px 5px gray;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
 }
 .restaurant-card__img {
   width: 100%;
@@ -125,6 +158,9 @@ section {
   justify-content: space-between;
   padding: 1rem;
 }
+.restaurant-card__infos__titles {
+  width: 10rem;
+}
 .restaurant-card__infos__titles h3 {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -136,31 +172,6 @@ section {
   color: black;
   font-size: 0.9rem;
   font-weight: lighter;
-}
-
-footer {
-  background-color: #2f2f2f;
-  color: white;
-  padding: 1rem;
-}
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1rem;
-  font-weight: normal;
-  padding-bottom: 0.5rem;
-}
-footer ul {
-  list-style: none;
-}
-footer li {
-  padding-bottom: 0.32em;
-}
-footer li a {
-  font-size: 0.9rem;
-  color: white;
-}
-footer li a:hover {
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
