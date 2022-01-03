@@ -100,12 +100,12 @@ section {
   display: flex;
   flex-wrap: wrap;
   display: block;
-}
-.restaurant-list ul {
-  display: inherit;
-}
-.restaurant-list ul a {
-  display: inherit;
+  /*  & ul{
+       display: inherit;
+       & a{
+           display: inherit;
+       }
+   } */
 }
 
 .restaurant-card {
