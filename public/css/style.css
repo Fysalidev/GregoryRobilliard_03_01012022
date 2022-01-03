@@ -17,7 +17,7 @@
 
 /* Base */
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
@@ -30,7 +30,11 @@ li {
   list-style: none;
 }
 
-main .page-title {
+section {
+  padding: 1rem;
+}
+
+.page-title {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -95,18 +99,24 @@ main .page-title {
 .restaurant-list {
   display: flex;
   flex-wrap: wrap;
+  display: block;
+}
+.restaurant-list ul {
+  display: inherit;
+}
+.restaurant-list ul a {
+  display: inherit;
 }
 
 .restaurant-card {
-  width: 15rem;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 10px 5px 5px gray;
-  margin: 1rem;
 }
 .restaurant-card__img {
   width: 100%;
-  height: 9rem;
+  height: 12rem;
   object-fit: cover;
   object-position: center;
 }

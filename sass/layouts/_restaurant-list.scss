@@ -1,4 +1,11 @@
 .restaurant-list{
     display: flex;
     flex-wrap: wrap;
+    display: block;
+    & ul{
+        display: inherit;
+        & a{
+            display: inherit;
+        }
+    }
 }

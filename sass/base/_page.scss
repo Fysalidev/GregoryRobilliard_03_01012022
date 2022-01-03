@@ -1,5 +1,5 @@
 * {  
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -12,7 +12,9 @@ li {
     list-style: none;
 }
 
-main
+section {
+    padding: 1rem;
+}
 
 .page-title {
     text-transform: uppercase;
