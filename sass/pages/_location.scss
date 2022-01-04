@@ -1,15 +1,17 @@
-.location {
+.location{
     padding: 1rem 0rem;
     text-align: center;
     background-color: $bg_grey_dark;
-    & i {
-        color: rgb(47, 47, 47);
+    
+    i{
         font-size: 1rem;
-    }
-    & span {
         color: rgb(47, 47, 47);
-        font-size: 0.9rem;
+    }
+    
+    span{
         font-family: $ft-text;
+        font-size: 0.9rem;
+        color: rgb(47, 47, 47);
         font-weight: bold;
     }
 }

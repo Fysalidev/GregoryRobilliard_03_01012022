@@ -5,11 +5,10 @@
 
 section {
     padding: 1rem;
+    font-family: $ft-text;
 }
 
 .page-title {
-    text-transform: uppercase;
-    font-family: $ft-text;
-    font-size: 1rem;
+    font-size: 1.5rem;
     align-items: flex-start;
 }

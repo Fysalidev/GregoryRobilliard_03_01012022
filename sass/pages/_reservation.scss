@@ -1,27 +1,25 @@
 .reservation{
-    background-color: $bg_grey_clear;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: $ft-text;
+    background-color: $bg-grey_clear;
     padding: 1rem;
-    &__title{
+
+    h2{
         width: 10rem;
-        margin-top: 1.1rem;
         font-size: 1rem;
+        margin-top: 1rem;
         text-align: center;
     }
-    &__info{
+    
+    p{
         width: 20rem;
-        margin-top: 1rem;
         font-size: 0.9rem;
         font-weight: lighter;
-        text-align: center;
-    }
-    &__btn{
         margin-top: 1rem;
-        margin-bottom: 2rem;
-       
+        margin-bottom: 1rem;
+        text-align: center;
     }
 }
