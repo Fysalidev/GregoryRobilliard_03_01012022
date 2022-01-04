@@ -1,0 +1,26 @@
+.menu{
+    position: relative;
+    z-index: 1;
+    margin-top: -2rem;
+    background-color: $bg-grey_clear;
+    border-radius: 2rem 2rem 0rem 0rem;
+
+    h2{
+        font-family: $ft-logo_and_title;
+    }
+
+    h3{
+        font-family: $ft-text;
+        font-size: 1rem;
+        font-weight: lighter;
+        padding: 1rem;
+        text-transform: uppercase;
+        
+        span{
+            text-decoration: underline;
+            text-underline-offset: 0.5rem;
+            text-decoration-color:$co-tertiary;
+        }
+        
+    }
+}

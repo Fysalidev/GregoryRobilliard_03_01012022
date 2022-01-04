@@ -68,11 +68,26 @@ header h1 {
 }
 
 .menu {
-  background-color: red;
-  border-radius: 2rem 2rem 0rem 0rem;
   position: relative;
   z-index: 1;
   margin-top: -2rem;
+  background-color: #f6f5f5;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+.menu h2 {
+  font-family: "Shrikhand", cursive;
+}
+.menu h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.menu h3 span {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #99E2D0;
 }
 
 footer {
