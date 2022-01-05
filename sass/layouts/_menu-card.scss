@@ -1,0 +1,13 @@
+.menu-card{
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px grey;
+    background-color: white;
+    margin: 1rem 0rem;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    span{
+        align-self: flex-end;
+        font-weight: bold;
+    }
+}
