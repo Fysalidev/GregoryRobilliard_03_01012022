@@ -98,16 +98,6 @@ header .off {
   padding: 1rem;
 }
 
-.menu-hero {
-  width: 100%;
-}
-.menu-hero img {
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
-  object-position: center;
-}
-
 .menu-card {
   border-radius: 0.5rem;
   box-shadow: 5px 5px 5px grey;
@@ -117,9 +107,22 @@ header .off {
   display: flex;
   justify-content: space-between;
 }
+.menu-card__infos p {
+  font-weight: lighter;
+}
 .menu-card span {
   align-self: flex-end;
   font-weight: bold;
+}
+
+.menu-hero {
+  width: 100%;
+}
+.menu-hero img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .order {

@@ -6,6 +6,13 @@
     padding: 0.7rem;
     display: flex;
     justify-content: space-between;
+    
+    &__infos{
+        p{
+            font-weight: lighter;
+        }
+    }
+    
     span{
         align-self: flex-end;
         font-weight: bold;
