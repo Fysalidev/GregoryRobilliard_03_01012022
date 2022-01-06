@@ -2,16 +2,20 @@ footer{
     background-color: rgb(47, 47, 47);
     color:white;
     padding: 1rem;
+
     h2{
         font-family: $ft-logo_and_title;
         font-size: 1rem;
         font-weight: normal;
         padding-bottom: 0.5rem;
     }
+
     ul{
         list-style: none;
+        
         li {
             padding-bottom: 0.32em;
+            
             a{
                 font-size: 0.9rem;
                 color: white;
