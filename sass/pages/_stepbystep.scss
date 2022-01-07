@@ -24,6 +24,19 @@
                 font-weight: bold;
                 margin-left: 1rem;
             }
+
+            .number{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 1.5rem;
+                width: 1.5rem;
+                border-radius: 100%;
+                background-color: $bg-primary;
+                color: white;
+                position: relative;
+                left: -40px;
+            }
         }
     }
 }
