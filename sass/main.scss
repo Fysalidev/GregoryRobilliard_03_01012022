@@ -6,20 +6,11 @@
 
 /* Base */
 @import "./base/reset";
-@import "./base/page";
 
 /* layouts */
 @import "./layouts/header";
-@import "./layouts/menu";
-@import "./layouts/menu-header";
-@import "./layouts/menu-card";
-@import "./layouts/menu-hero";
-@import "./layouts/order";
 @import "./layouts/footer";
 
 /* Pages */
-@import "./pages/location";
-@import "./pages/reservation";
-@import "./pages/stepbystep";
-@import "./pages/restaurant";
-@import "./pages/restaurant-card";
+@import "./pages/index";
+@import "./pages/menu";
