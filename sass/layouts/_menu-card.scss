@@ -1,132 +1,71 @@
 .menu-card{
-
-    display:flex;
-    justify-content: space-between;
-    overflow: hidden;
-    border-radius: 0.9rem;
-    background-color: white;
-    margin-bottom: 1rem;
-    
-    &__container{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0.7rem;
-
-        &__titles{
-            
-            h4{
-                color: black;
-                font-size: 1rem;
-            }
-    
-            p{
-                color: black;
-                font-weight: lighter;
-            }
-        }
-
-        span{
-            color: black;
-            font-weight: bold;
-        }
-
-        &:hover + .menu-card__checked{
-            transform: translate(-100px,0);
-            i{
-                transform: rotate(0deg);
-            }
-        }
-    }
-
-    &__checked{
-        display: flex;
-/*         justify-content: center;
-        align-items: center; */
-        width: 200px;
-        position: relative;
-        left: 100px;
-        background-color: $bg-tertiary;
-        transform: translate;
-        transition: transform 330ms ease-in-out;
-        color: white;
-        font-size: 1.5rem;
-
-        &__container1{
-            width: 100px;
-            display: flex;
-            background-color: red;
-            
-            span{
-                color: white;
-            }
-        }
-
-        &__container2{
-            width: 100px;
-            display: flex;
-            background-color: $bg-tertiary;
-        }
-
-
-        i{
-            transform: rotate(180deg);
-            transition: transform 600ms ease-in-out;
-        }
-    }
-
-    /* cursor: pointer;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px grey;
-    margin: 1rem 0rem;
     display: flex;
-    justify-content: space-between;
+    cursor: default;
+    background-color: white;
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 1rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.20),3px 3px 6px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    transition: 500ms;
+
+    &:hover{
+        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.20),3px 3px 12px rgba(0, 0, 0, 0.10);
+    }
+
+    &:hover > .menu-card__validation{
+        margin-right: -1rem;
+        
+        i {
+            transform: rotate(0deg);
+        }
+    }
 
     &__infos{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 1rem;
-        
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+
         h4{
-            display: inline;
-            font-size: 1rem;
-            padding-bottom: 0.1rem;
-        }
-            
-        p{
-            display: inline;
-            font-size: 0.9rem;
-            font-weight: lighter;
-            text-overflow: ellipsis;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         }
 
-        &:hover + .menu-card__checked{
-            transform: translate(100px, 0);
+        p{
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         }
     }
-    
-    &__checked{
+
+    &__price{
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 0.5rem;
+    }
+
+    &__validation {
+        background-color: $bg-tertiary;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
         display:flex;
-        
-        span{
-            display: block;
-            align-self: flex-end;
-            font-weight: bold;
-            padding-right: 1rem;
-            padding-bottom: 1rem;
-        }
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.6s;
 
-        &__btn{
-            width: 2.5rem;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $bg-tertiary;
+        & i{
             color: white;
-            transition: transform 330ms ease-in;
+            font-size: 1.5rem;
+            transform: rotate(-360deg);
+            transition-duration: 0.7s;
         }
 
-    } */
+    }
 }
