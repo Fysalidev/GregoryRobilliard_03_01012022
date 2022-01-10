@@ -1,0 +1,139 @@
+.page-title {
+    font-size: 1.5rem;
+    align-items: flex-start;
+}
+
+.location{
+    padding: 1rem 0rem;
+    text-align: center;
+    background-color: $bg_grey_dark;
+    
+    i{
+        font-size: 1rem;
+        color: rgb(47, 47, 47);
+    }
+    
+    span{
+        font-family: $ft-text;
+        font-size: 0.9rem;
+        color: rgb(47, 47, 47);
+        font-weight: bold;
+    }
+}
+
+.reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $ft-text;
+    background-color: $bg-grey_clear;
+    padding: 1rem;
+
+    h2{
+        width: 10rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    p{
+        width: 20rem;
+        font-size: 0.9rem;
+        font-weight: lighter;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+.stepbystep{
+    padding: 1rem;
+    ul{
+        display: block;
+        
+        li{
+            display: flex;
+            align-items: center;
+            height: 2rem;
+            background-color: $bg-grey_clear;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+
+            i {
+                font-size: 1rem;
+                margin-left: 1rem;
+            }
+            
+            span {
+                font-size: 0.9rem;
+                font-weight: bold;
+                margin-left: 1rem;
+            }
+
+            .number{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 1.5rem;
+                width: 1.5rem;
+                border-radius: 100%;
+                background-color: $bg-primary;
+                color: white;
+                position: relative;
+                left: -40px;
+            }
+        }
+    }
+}
+
+.restaurant{
+    padding: 1rem;
+    ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.restaurant-card{
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 5px 5px gray;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+   
+    img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: center;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        &__titles{
+            width: 10rem;
+
+            h3{
+                font-family: $ft-text;
+                color: black;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            h4{
+                font-family: $ft-text;
+                color: black;
+                font-size: 0.9rem;
+                font-weight: lighter;
+            }
+        }
+    }
+}
