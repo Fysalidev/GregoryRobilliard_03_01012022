@@ -285,16 +285,18 @@ footer ul li a:hover {
   flex: 1;
 }
 .menu-card__infos h4 {
-  margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 1rem;
+  font-weight: bold;
 }
 .menu-card__infos p {
-  margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 0.9rem;
+  font-weight: lighter;
 }
 .menu-card__price {
   font-weight: bold;
