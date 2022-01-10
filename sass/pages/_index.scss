@@ -1,23 +1,27 @@
 .page-title {
     font-size: 1.5rem;
+    letter-spacing: 0.05rem;
     align-items: flex-start;
 }
 
 .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+    color: rgb(47, 47, 47);
     padding: 1rem 0rem;
     text-align: center;
     background-color: $bg_grey_dark;
-    
+
     i{
-        font-size: 1rem;
-        color: rgb(47, 47, 47);
+        font-size: 1.1rem;
     }
     
     span{
-        font-family: $ft-text;
-        font-size: 0.9rem;
-        color: rgb(47, 47, 47);
-        font-weight: bold;
+        margin-left: 1rem;
+        font-weight: 400;
     }
 }
 
@@ -26,23 +30,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: $ft-text;
     background-color: $bg-grey_clear;
-    padding: 1rem;
+    padding: 2rem 1rem;
 
     h2{
-        width: 10rem;
-        font-size: 1rem;
-        margin-top: 1rem;
+        width: 15rem;
         text-align: center;
+        padding: 0.5rem 1rem;
     }
     
     p{
         width: 20rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: lighter;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
         text-align: center;
     }
 }

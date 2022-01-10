@@ -12,6 +12,7 @@
   color: white;
   padding: 0.8rem;
   border-radius: 10rem;
+  margin: 1rem;
   background: #9356dc;
   background: linear-gradient(230deg, #9356dc 20%, #c96ade 65%, #ff79da 100%);
 }
@@ -31,9 +32,10 @@ li {
   list-style: none;
 }
 
-.bloc_page {
+.bloc-page {
   max-width: 450px;
   margin: auto;
+  font-family: "Roboto", sans-serif;
 }
 
 section {
@@ -90,23 +92,26 @@ footer ul li a:hover {
 /* Pages */
 .page-title {
   font-size: 1.5rem;
+  letter-spacing: 0.05rem;
   align-items: flex-start;
 }
 
 .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #2f2f2f;
   padding: 1rem 0rem;
   text-align: center;
   background-color: #e7e7e7;
 }
 .location i {
-  font-size: 1rem;
-  color: #2f2f2f;
+  font-size: 1.1rem;
 }
 .location span {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
-  color: #2f2f2f;
-  font-weight: bold;
+  margin-left: 1rem;
+  font-weight: 400;
 }
 
 .reservation {
@@ -114,22 +119,19 @@ footer ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
   background-color: #f6f5f5;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 .reservation h2 {
-  width: 10rem;
-  font-size: 1rem;
-  margin-top: 1rem;
+  width: 15rem;
   text-align: center;
+  padding: 0.5rem 1rem;
 }
 .reservation p {
   width: 20rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: lighter;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
 }
 
