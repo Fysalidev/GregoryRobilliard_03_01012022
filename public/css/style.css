@@ -3,18 +3,21 @@
 /* Colors */
 /* Background Colors */
 /* Components */
-.btn-cta {
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta__btn {
   display: block;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-size: 0.8rem;
+  cursor: default;
   color: white;
-  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
   border-radius: 10rem;
-  margin: 1rem;
-  background: #9356dc;
-  background: linear-gradient(230deg, #9356dc 20%, #c96ade 65%, #ff79da 100%);
+  background: linear-gradient(0deg, #9356dc 35%, #ff79da 100%);
+  padding: 1rem 2rem;
+  margin: 1.5rem 0rem;
 }
 
 /* Base */
