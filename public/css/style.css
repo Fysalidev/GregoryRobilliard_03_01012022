@@ -159,29 +159,51 @@ footer ul li a:hover {
   padding: 1rem;
 }
 .stepbystep ul {
-  display: block;
+  /* display: block; */
 }
-.stepbystep ul li {
+.stepbystep ul .step {
+  cursor: default;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
   height: 2rem;
   background-color: #f6f5f5;
   border-radius: 1rem;
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  cursor: pointer;
 }
-.stepbystep ul li i {
-  font-size: 1rem;
+.stepbystep ul .step:hover::after {
+  opacity: 1;
+}
+.stepbystep ul .step:hover > i {
+  color: #9356DC;
+}
+.stepbystep ul .step::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 250ms;
+  border-radius: 1rem;
+  background-color: #f2ebfe;
+}
+.stepbystep ul .step i {
+  font-size: 1.2rem;
   margin-left: 1rem;
+  transition: 250ms;
 }
-.stepbystep ul li span {
+.stepbystep ul .step span {
   font-size: 0.9rem;
   font-weight: bold;
   margin-left: 1rem;
 }
-.stepbystep ul li .number {
+.stepbystep ul .step .number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,8 +229,11 @@ footer ul li a:hover {
   display: block;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 3px 3px 6px rgba(0, 0, 0, 0.1);
   margin: 0.5rem 0.5rem 0.5rem 0rem;
+}
+.restaurant-card:hover {
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2), 3px 3px 12px rgba(0, 0, 0, 0.1);
 }
 .restaurant-card img {
   width: 100%;
