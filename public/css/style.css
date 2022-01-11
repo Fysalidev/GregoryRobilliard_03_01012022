@@ -9,15 +9,32 @@
   align-items: center;
 }
 .cta__btn {
-  display: block;
+  position: relative;
+  z-index: 1;
   cursor: default;
   color: white;
   font-size: 1rem;
   font-weight: 400;
   border-radius: 10rem;
-  background: linear-gradient(0deg, #9356dc 35%, #ff79da 100%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   padding: 1rem 2rem;
   margin: 1.5rem 0rem;
+}
+.cta__btn:hover::after {
+  opacity: 1;
+}
+.cta__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms;
+  border-radius: 10rem;
+  background-color: #9356DC;
 }
 
 /* Base */

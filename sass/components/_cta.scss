@@ -4,14 +4,35 @@
     align-items: center;
     
     &__btn{
-        display: block;
+        position:relative;
+        z-index: 1;
         cursor: default;
         color: white;
         font-size: 1rem;
         font-weight: 400;
         border-radius: 10rem;
-        background: linear-gradient(0deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
+        background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
         padding: 1rem 2rem;
         margin: 1.5rem 0rem;
+        
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+        }
+
+        &::after{
+            content:"";
+            position: absolute;
+            top:0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 400ms;
+            border-radius: 10rem;
+            background-color: $bg-primary;
+        }
     }
 }
