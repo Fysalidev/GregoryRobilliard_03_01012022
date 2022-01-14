@@ -97,6 +97,30 @@
   background-color: #9356DC;
 }
 
+.heart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.heart-btn__bg {
+  position: absolute;
+  color: #f6f5f5;
+  font-size: 20px;
+  z-index: 4;
+}
+.heart-btn__bg:active {
+  color: #FF79DA;
+  transform-origin: bottom;
+  transition-duration: 330ms;
+}
+.heart-btn__border {
+  position: absolute;
+  color: #FF79DA;
+  font-size: 22px;
+  z-index: 2;
+}
+
 /* Base */
 * {
   margin: 0px;
@@ -378,6 +402,7 @@ footer ul li a:hover {
   overflow: hidden;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 3px 3px 6px rgba(0, 0, 0, 0.1);
   margin: 0.5rem 0.5rem 0.5rem 0rem;
+  z-index: 1;
 }
 .restaurant-card:hover {
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2), 3px 3px 12px rgba(0, 0, 0, 0.1);

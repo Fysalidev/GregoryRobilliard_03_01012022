@@ -1,0 +1,30 @@
+.heart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    &__bg{
+        position: absolute;
+        color: $bg-grey_clear;
+        font-size: 20px;
+        z-index: 4;
+        
+        &:active{
+            color:$co-secondary;
+            transform-origin: bottom;
+            transition-duration: 330ms; 
+        }
+        
+    }
+    
+    &__border{
+        position: absolute;
+        color: $co-secondary;
+        font-size: 22px;
+        z-index: 2;
+    }
+
+
+    
+}
