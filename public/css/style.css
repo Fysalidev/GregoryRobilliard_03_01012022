@@ -37,6 +37,31 @@
     opacity: 1;
   }
 }
+/* ### Spinner Loader ### */
+@keyframes spin-container {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    transition: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transition: scale(1);
+    opacity: 1;
+  }
+}
 /* Components */
 .cta {
   display: flex;
@@ -88,6 +113,7 @@ li {
 }
 
 .bloc-page {
+  position: relative;
   max-width: 450px;
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -149,6 +175,92 @@ footer ul li a:hover {
   font-size: 1.5rem;
   letter-spacing: 0.05rem;
   align-items: flex-start;
+}
+
+/* ### spinner Loader ### */
+.spin-container {
+  width: 100%;
+  animation: spin-container 5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  margin-top: 95px;
+  z-index: -1;
+}
+
+.spin {
+  border: 3px solid #0D4B9F;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+}
+
+#loader2 {
+  border: 3px solid #E0EDFF;
+  width: 220px;
+  height: 220px;
+  position: relative;
+  top: -216px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+}
+
+#loader3 {
+  border: 3px solid #005CDC;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  top: -452px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+}
+
+#loader4 {
+  border: 3px solid #94B6E5;
+  width: 260px;
+  height: 260px;
+  position: relative;
+  top: -708px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+#text {
+  color: #D6E3F6;
+  font-family: Arial;
+  font-size: 15px;
+  position: relative;
+  top: -857px;
+}
+
+/* ### Page ### */
+.reveal {
+  animation: main 5s ease-in-out;
+  opacity: 1;
+  z-index: 1;
 }
 
 .location {
