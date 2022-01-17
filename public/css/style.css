@@ -329,9 +329,6 @@ footer ul li a:hover {
 .stepbystep {
   padding: 1rem;
 }
-.stepbystep ul {
-  /* display: block; */
-}
 .stepbystep ul .step {
   cursor: default;
   display: flex;
