@@ -75,7 +75,7 @@
       }
       #text {
         color: #D6E3F6;
-        font-family: Arial;
+        font-family: $ft-text;
         font-size: 15px;
         position: relative;
         top: -857px;
@@ -88,7 +88,6 @@
     opacity: 1;
     z-index: 1;
 }
-
 
 .location{
     display: flex;
