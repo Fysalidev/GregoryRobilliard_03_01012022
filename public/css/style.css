@@ -213,7 +213,7 @@ footer ul li a:hover {
 }
 
 .spin {
-  border: 3px solid #0D4B9F;
+  border: 3px solid #9356DC;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -224,7 +224,7 @@ footer ul li a:hover {
 }
 
 #loader2 {
-  border: 3px solid #E0EDFF;
+  border: 3px solid #FF79DA;
   width: 220px;
   height: 220px;
   position: relative;
@@ -235,7 +235,7 @@ footer ul li a:hover {
 }
 
 #loader3 {
-  border: 3px solid #005CDC;
+  border: 3px solid #99E2D0;
   width: 240px;
   height: 240px;
   position: relative;
@@ -246,7 +246,7 @@ footer ul li a:hover {
 }
 
 #loader4 {
-  border: 3px solid #94B6E5;
+  border: 3px solid #9356DC;
   width: 260px;
   height: 260px;
   position: relative;
