@@ -3,3 +3,7 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin section-space {
+    margin: 0rem 0rem 2rem 0rem;
+}

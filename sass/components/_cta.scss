@@ -9,13 +9,15 @@
         font-size: 1rem;
         font-weight: 400;
         border-radius: 10rem;
-        background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+        background: $co-gradient;
         padding: 1rem 2rem;
         margin: 1.5rem 0rem;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.20),3px 3px 6px rgba(0, 0, 0, 0.10);
         
         &:hover{
             &::after{
                 opacity: 1;
+                box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.20),3px 3px 12px rgba(0, 0, 0, 0.10);
             }
         }
         
@@ -31,6 +33,7 @@
             border-radius: 10rem;
             background-color: $bg-secondary;
             transition: opacity 400ms;
+             
         }
     }
 }

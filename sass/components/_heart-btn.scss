@@ -1,26 +1,26 @@
 .heart-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
+    @include flex-center-center;
+    /* align-self: flex-start; */
     
     &__bg{
         position: absolute;
-        color: $bg-grey_clear;
+        color: transparent;
         font-size: 20px;
         z-index: 4;
         
-        &:active{
-            color:$co-secondary;
+        &:hover{
+            color:$co-primary;
+            opacity: 0.8;
             transform-origin: bottom;
-            transition-duration: 330ms; 
+            transition-duration: 1s; 
         }
         
     }
     
     &__border{
         position: absolute;
-        color: $co-secondary;
+        color: $co-grey_dark;
         font-size: 22px;
         z-index: 2;
     }

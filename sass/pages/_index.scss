@@ -1,5 +1,7 @@
 .page-title {
     font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0rem 1rem 0rem;
 }
 
 .reveal{
@@ -8,60 +10,62 @@
     animation: main 5s ease-in-out;
 }
 
-.location{
-    @include flex-center-center;
-    background-color: $co-grey_dark;
-    color: rgb(47, 47, 47);
-    text-align: center;
-    padding: 1rem 0rem;
+.hero{
+    @include section-space;
 
-    i{
-        font-size: 1.1rem;
+    &__location{
+        @include flex-center-center;
+        text-align: center;
+        background-color: $co-grey_dark;
+        color: rgb(47, 47, 47);
+        padding: 1rem 0rem 1rem 0;
+    
+        i{
+            font-size: 1.1rem;
+        }
+        
+        span{
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 1rem;
+        }
     }
     
-    span{
-        font-size: 1rem;
-        margin-left: 1rem;
-        font-weight: 400;
-    }
-}
-
-.reservation{
-    @include flex-center-center;
-    flex-direction: column;
-    background-color: $co-grey_clear;
-    padding: 2rem 1rem;
-
-    h2{
-        width: 15rem;
+    &__reservation{
+        @include flex-center-center;
+        flex-direction: column;
         text-align: center;
-        padding: 0.5rem 1rem;
-    }
+        background-color: $co-grey_clear;
+        padding: 1rem 2rem 2rem 2rem;
     
-    p{
-        width: 20rem;
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 400;
-        padding: 0.5rem 1rem;
+        h2{
+            width: 15rem;
+        }
+        
+        p{
+            width: 20rem;
+            font-size: 1rem;
+            font-weight: 300;
+        }
     }
+
 }
 
 .stepbystep{
-    padding: 1rem;
+    @include section-space;
+    padding: 0rem 1rem;
     ul{
         .step{
-            cursor: default;
+            height: 2rem;
+            position: relative;
             display: flex;
             align-items: center;
-            position: relative;
             z-index: 1;
-            height: 2rem;
+            cursor: default;
             background-color: $bg-grey_clear;
             border-radius: 1rem;
             padding: 1rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            margin: 1rem 0rem;
             
             
             &:hover{
@@ -117,54 +121,12 @@
 }
 
 .restaurant{
-    padding: 1rem;
+    background-color: $co-grey_clear;
+    padding: 2rem 1rem 4rem 1rem;
+    
     ul{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }
-}
-
-.restaurant-card{
-    display: block;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.20),3px 3px 6px rgba(0, 0, 0, 0.10);
-    margin: 0.5rem 0.5rem 0.5rem 0rem;
-    z-index: 1;
-
-    &:hover{
-        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.20),3px 3px 12px rgba(0, 0, 0, 0.10);
-    }
-   
-    img{
-    width: 100%;
-    height: 12rem;
-    object-fit: cover;
-    object-position: center;
-    }
-
-    &__container{
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-
-        &__titles{
-            width: 10rem;
-
-            h3{
-                font-family: $ft-text;
-                color: black;
-                font-size: 1rem;
-                font-weight: bold;
-            }
-
-            h4{
-                font-family: $ft-text;
-                color: black;
-                font-size: 0.9rem;
-                font-weight: lighter;
-            }
-        }
     }
 }

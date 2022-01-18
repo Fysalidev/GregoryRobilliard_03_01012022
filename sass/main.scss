@@ -12,10 +12,11 @@
 @import "./pages/menu";
 
 /* layouts */
+@import "./layouts/spinner";
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./layouts/restaurant-card";
 
 /* Components */
 @import "./components/cta";
 @import "./components/heart-btn";
-@import "./components/spinner";

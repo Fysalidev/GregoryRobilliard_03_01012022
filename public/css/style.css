@@ -76,13 +76,11 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
-section {
-  font-family: "Roboto", sans-serif;
-}
-
 /* Pages */
 .page-title {
   font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
 .reveal {
@@ -91,60 +89,59 @@ section {
   animation: main 5s ease-in-out;
 }
 
-.location {
+.hero {
+  margin: 0rem 0rem 2rem 0rem;
+}
+.hero__location {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: #e7e7e7;
   color: #2f2f2f;
-  text-align: center;
-  padding: 1rem 0rem;
+  padding: 1rem 0rem 1rem 0;
 }
-.location i {
+.hero__location i {
   font-size: 1.1rem;
 }
-.location span {
+.hero__location span {
   font-size: 1rem;
-  margin-left: 1rem;
   font-weight: 400;
+  margin-left: 1rem;
 }
-
-.reservation {
+.hero__reservation {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   background-color: #f6f5f5;
-  padding: 2rem 1rem;
+  padding: 1rem 2rem 2rem 2rem;
 }
-.reservation h2 {
+.hero__reservation h2 {
   width: 15rem;
-  text-align: center;
-  padding: 0.5rem 1rem;
 }
-.reservation p {
+.hero__reservation p {
   width: 20rem;
-  text-align: center;
   font-size: 1rem;
-  font-weight: 400;
-  padding: 0.5rem 1rem;
+  font-weight: 300;
 }
 
 .stepbystep {
-  padding: 1rem;
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 0rem 1rem;
 }
 .stepbystep ul .step {
-  cursor: default;
+  height: 2rem;
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   z-index: 1;
-  height: 2rem;
+  cursor: default;
   background-color: #f6f5f5;
   border-radius: 1rem;
   padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0rem;
 }
 .stepbystep ul .step:hover::after {
   opacity: 1;
@@ -189,50 +186,13 @@ section {
 }
 
 .restaurant {
-  padding: 1rem;
+  background-color: #f6f5f5;
+  padding: 2rem 1rem 4rem 1rem;
 }
 .restaurant ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
-
-.restaurant-card {
-  display: block;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 3px 3px 6px rgba(0, 0, 0, 0.1);
-  margin: 0.5rem 0.5rem 0.5rem 0rem;
-  z-index: 1;
-}
-.restaurant-card:hover {
-  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2), 3px 3px 12px rgba(0, 0, 0, 0.1);
-}
-.restaurant-card img {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  object-position: center;
-}
-.restaurant-card__container {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-}
-.restaurant-card__container__titles {
-  width: 10rem;
-}
-.restaurant-card__container__titles h3 {
-  font-family: "Roboto", sans-serif;
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.restaurant-card__container__titles h4 {
-  font-family: "Roboto", sans-serif;
-  color: black;
-  font-size: 0.9rem;
-  font-weight: lighter;
 }
 
 .menu-hero {
@@ -360,111 +320,6 @@ section {
 }
 
 /* layouts */
-header {
-  height: 3rem;
-  position: relative;
-  padding: 1rem;
-  z-index: 1000;
-  box-shadow: 0px 2px rgba(28, 28, 28, 0.08);
-}
-header h1 {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-}
-header a {
-  position: relative;
-  top: -35px;
-  font-size: 1.2rem;
-  color: black;
-}
-header .off {
-  display: none;
-}
-
-footer {
-  background-color: #2f2f2f;
-  color: white;
-  padding: 1rem;
-}
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1rem;
-  font-weight: normal;
-  padding-bottom: 0.5rem;
-}
-footer ul {
-  list-style: none;
-}
-footer ul li {
-  padding-bottom: 0.32em;
-}
-footer ul li a {
-  font-size: 0.9rem;
-  color: white;
-}
-footer ul li a:hover {
-  font-weight: bold;
-}
-
-/* Components */
-.cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cta__btn {
-  position: relative;
-  z-index: 1;
-  cursor: default;
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
-  border-radius: 10rem;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  padding: 1rem 2rem;
-  margin: 1.5rem 0rem;
-}
-.cta__btn:hover::after {
-  opacity: 1;
-}
-.cta__btn::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  border-radius: 10rem;
-  background-color: #FF79DA;
-  transition: opacity 400ms;
-}
-
-.heart-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.heart-btn__bg {
-  position: absolute;
-  color: #f6f5f5;
-  font-size: 20px;
-  z-index: 4;
-}
-.heart-btn__bg:active {
-  color: #FF79DA;
-  transform-origin: bottom;
-  transition-duration: 330ms;
-}
-.heart-btn__border {
-  position: absolute;
-  color: #FF79DA;
-  font-size: 22px;
-  z-index: 2;
-}
-
 .spin-container {
   width: 100%;
   position: absolute;
@@ -520,6 +375,169 @@ footer ul li a:hover {
   font-size: 15px;
   position: relative;
   top: -857px;
+}
+
+header {
+  height: 3rem;
+  position: relative;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0px 2px rgba(28, 28, 28, 0.08);
+}
+header h1 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+header a {
+  position: relative;
+  top: -35px;
+  font-size: 1.2rem;
+  color: black;
+}
+header .off {
+  display: none;
+}
+
+footer {
+  background-color: #2f2f2f;
+  color: white;
+  padding: 1rem;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  padding-bottom: 0.32em;
+}
+footer ul li a {
+  font-size: 0.9rem;
+  color: white;
+}
+footer ul li a:hover {
+  font-weight: bold;
+}
+
+.restaurant-card {
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+  margin: 1rem 0.5rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 3px 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.restaurant-card:hover {
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2), 3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+.restaurant-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  object-position: center;
+}
+.restaurant-card__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 1rem;
+}
+.restaurant-card__container__titles {
+  width: 10rem;
+}
+.restaurant-card__container__titles h3 {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.restaurant-card__container__titles h4 {
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.restaurant-card--new::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  right: 1rem;
+  content: "Nouveau";
+  font-size: 0.9rem;
+  color: #013d01;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: #99E2D0;
+}
+
+/* Components */
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta__btn {
+  position: relative;
+  z-index: 1;
+  cursor: default;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 10rem;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  padding: 1rem 2rem;
+  margin: 1.5rem 0rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.cta__btn:hover::after {
+  opacity: 1;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2), 3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+.cta__btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 10rem;
+  background-color: #FF79DA;
+  transition: opacity 400ms;
+}
+
+.heart-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-self: flex-start; */
+}
+.heart-btn__bg {
+  position: absolute;
+  color: transparent;
+  font-size: 20px;
+  z-index: 4;
+}
+.heart-btn__bg:hover {
+  color: #9356DC;
+  opacity: 0.8;
+  transform-origin: bottom;
+  transition-duration: 1s;
+}
+.heart-btn__border {
+  position: absolute;
+  color: #e7e7e7;
+  font-size: 22px;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
