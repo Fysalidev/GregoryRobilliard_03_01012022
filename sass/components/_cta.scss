@@ -1,7 +1,5 @@
 .cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-center;
     
     &__btn{
         position:relative;
@@ -20,19 +18,19 @@
                 opacity: 1;
             }
         }
-
+        
         &::after{
             content:"";
             position: absolute;
+            z-index: -1;
             top:0;
             right: 0;
             bottom: 0;
             left: 0;
             opacity: 0;
-            z-index: -1;
-            transition: opacity 400ms;
             border-radius: 10rem;
-            background-color: $bg-primary;
+            background-color: $bg-secondary;
+            transition: opacity 400ms;
         }
     }
 }

@@ -1,18 +1,21 @@
 /* Utils */
 @import "./utils/variables";
 @import "./utils/keyframes";
-
-/* Components */
-@import "./components/cta";
-@import "./components/heart-btn";
+@import "./utils/mixins";
 
 /* Base */
 @import "./base/reset";
+@import "./base/base";
+
+/* Pages */
+@import "./pages/index";
+@import "./pages/menu";
 
 /* layouts */
 @import "./layouts/header";
 @import "./layouts/footer";
 
-/* Pages */
-@import "./pages/index";
-@import "./pages/menu";
+/* Components */
+@import "./components/cta";
+@import "./components/heart-btn";
+@import "./components/spinner";
