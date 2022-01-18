@@ -1,7 +1,6 @@
 .heart-btn{
     cursor: pointer;
     @include flex-center-center;
-    /* align-self: flex-start; */
     
     &__bg{
         position: absolute;
@@ -20,9 +19,13 @@
     
     &__border{
         position: absolute;
-        color: $co-grey_dark;
-        font-size: 22px;
         z-index: 2;
+        font-size: 22px;
+        color: $co-grey_dark;
+        
+        &--black{
+           color: black; 
+        }
     }
 
 
