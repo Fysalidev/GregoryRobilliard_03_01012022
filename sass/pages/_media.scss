@@ -1,0 +1,50 @@
+@media all and (min-width: 768px) {
+
+    .restaurant{
+
+        ul{
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            li{
+                width: 47%;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 960px) {
+    
+    .stepbystep{
+        
+        &__container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .step{
+            width: 95%;
+            margin: 0.5rem;
+        }
+    }
+    
+    .restaurant{
+
+        ul{
+            li{
+                width: 23%;
+            }
+        }
+    }
+
+    .menu__items{
+        display: flex;
+        justify-content: space-between;
+
+        section{
+            width: 30%;
+        }
+    }
+}

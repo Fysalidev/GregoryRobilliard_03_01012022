@@ -1,22 +1,23 @@
-/* Utils */
+// Utils //
 @import "./utils/variables";
-@import "./utils/keyframes";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 
-/* Base */
+// Base //
 @import "./base/reset";
 @import "./base/base";
 
-/* Pages */
+// Pages //
 @import "./pages/index";
 @import "./pages/menu";
+@import "./pages/media";
 
-/* layouts */
+// layouts //
 @import "./layouts/spinner";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/restaurant-card";
 
-/* Components */
+// Components //
 @import "./components/cta";
 @import "./components/heart-btn";

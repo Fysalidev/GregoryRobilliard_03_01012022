@@ -53,8 +53,14 @@
 
 .stepbystep{
     @include section-space;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0rem 1rem;
-    ul{
+    
+    &__container{
+        width: 100%;
+        
         .step{
             height: 2rem;
             position: relative;
@@ -66,8 +72,7 @@
             border-radius: 1rem;
             padding: 1rem;
             margin: 1rem 0rem;
-            
-            
+
             &:hover{
                 &::after{
                     opacity: 1;
@@ -95,25 +100,27 @@
             
             i {
                 font-size: 1.2rem;
-                margin-left: 1rem;
                 transition : 250ms;
             }
             
-            span {
+            .text {
                 font-size: 0.9rem;
                 font-weight: bold;
-                margin-left: 1rem;
+                
+                margin-left: 1.2rem;
             }
             
             .number{
+                width: 1.2rem;
+                height: 1.2rem;
+                position: relative;
+                left: -25px;
                 @include flex-center-center;
-                height: 1.5rem;
-                width: 1.5rem;
+                color: white;
+                font-size: 0.8rem;
+                font-weight: 500;
                 border-radius: 100%;
                 background-color: $bg-primary;
-                color: white;
-                position: relative;
-                left: -40px;
             }
             
         }
@@ -122,7 +129,7 @@
 
 .restaurant{
     background-color: $co-grey_clear;
-    padding: 2rem 1rem 4rem 1rem;
+    padding: 2rem 1rem 7rem 1rem;
     
     ul{
         display: flex;
@@ -130,3 +137,6 @@
         flex-wrap: wrap;
     }
 }
+
+
+

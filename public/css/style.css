@@ -1,4 +1,3 @@
-/* Utils */
 /* Fonts */
 /* Colors */
 /* Background Colors */
@@ -54,7 +53,6 @@
     opacity: 1;
   }
 }
-/* Base */
 * {
   margin: 0px;
   padding: 0px;
@@ -77,7 +75,6 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
-/* Pages */
 .page-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -130,9 +127,15 @@ li {
 
 .stepbystep {
   margin: 0rem 0rem 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 0rem 1rem;
 }
-.stepbystep ul .step {
+.stepbystep__container {
+  width: 100%;
+}
+.stepbystep__container .step {
   height: 2rem;
   position: relative;
   display: flex;
@@ -144,13 +147,13 @@ li {
   padding: 1rem;
   margin: 1rem 0rem;
 }
-.stepbystep ul .step:hover::after {
+.stepbystep__container .step:hover::after {
   opacity: 1;
 }
-.stepbystep ul .step:hover > i {
+.stepbystep__container .step:hover > i {
   color: #9356DC;
 }
-.stepbystep ul .step::after {
+.stepbystep__container .step::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -163,32 +166,33 @@ li {
   border-radius: 1rem;
   background-color: #f2ebfe;
 }
-.stepbystep ul .step i {
+.stepbystep__container .step i {
   font-size: 1.2rem;
-  margin-left: 1rem;
   transition: 250ms;
 }
-.stepbystep ul .step span {
+.stepbystep__container .step .text {
   font-size: 0.9rem;
   font-weight: bold;
-  margin-left: 1rem;
+  margin-left: 1.2rem;
 }
-.stepbystep ul .step .number {
+.stepbystep__container .step .number {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: relative;
+  left: -25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1.5rem;
-  width: 1.5rem;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
   border-radius: 100%;
   background-color: #9356DC;
-  color: white;
-  position: relative;
-  left: -40px;
 }
 
 .restaurant {
   background-color: #f6f5f5;
-  padding: 2rem 1rem 4rem 1rem;
+  padding: 2rem 1rem 7rem 1rem;
 }
 .restaurant ul {
   display: flex;
@@ -232,7 +236,7 @@ li {
   text-decoration-color: #99E2D0;
 }
 
-.menu-header {
+.menu__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -320,7 +324,39 @@ li {
   padding: 1rem 8rem 2rem 8rem;
 }
 
-/* layouts */
+@media all and (min-width: 768px) {
+  .restaurant ul {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurant ul li {
+    width: 47%;
+  }
+}
+@media all and (min-width: 960px) {
+  .stepbystep__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .stepbystep .step {
+    width: 95%;
+    margin: 0.5rem;
+  }
+
+  .restaurant ul li {
+    width: 23%;
+  }
+
+  .menu__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu__items section {
+    width: 30%;
+  }
+}
 .spin-container {
   width: 100%;
   position: absolute;
@@ -478,7 +514,6 @@ footer ul li a:hover {
   background-color: #99E2D0;
 }
 
-/* Components */
 .cta {
   display: flex;
   justify-content: center;
