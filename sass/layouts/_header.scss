@@ -2,8 +2,9 @@ header{
     height: 3rem;
     position: relative;
     padding: 1rem;
-    z-index: 1000;
+    z-index: 2;
     box-shadow:  0px 2px rgb(28,28,28,0.08);
+    background-color: white;
     
     h1{
         font-family: $ft-logo_and_title;
