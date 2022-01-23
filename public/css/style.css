@@ -407,9 +407,9 @@ li {
   animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
 }
 .spin-container #text {
-  color: #D6E3F6;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-size: 1rem;
   position: relative;
   top: -857px;
 }
