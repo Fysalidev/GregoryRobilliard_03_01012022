@@ -363,6 +363,9 @@ li {
   text-align: center;
   margin-top: 95px;
   animation: spin-container 5s ease-in-out;
+  /*  display: flex;
+   justify-content: center;
+   align-items: center; */
 }
 .spin-container .spin {
   border: 3px solid #9356DC;
