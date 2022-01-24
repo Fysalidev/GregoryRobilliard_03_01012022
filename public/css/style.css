@@ -1,10 +1,10 @@
 /* Background Colors */
 /* #### Spinner Loader #### */
-@keyframes spin-container {
+@keyframes disappear {
   0% {
     opacity: 1;
   }
-  99% {
+  50% {
     opacity: 1;
   }
   100% {
@@ -15,12 +15,10 @@
   0% {
     opacity: 0;
   }
-  90% {
-    transition: scale(0);
+  50% {
     opacity: 0;
   }
   100% {
-    transition: scale(1);
     opacity: 1;
   }
 }
@@ -57,9 +55,8 @@
 }
 
 a {
-  text-decoration: none;
   margin: 0;
-  /* font-family: $ft-text; */
+  text-decoration: none;
 }
 
 li {
@@ -67,10 +64,9 @@ li {
 }
 
 .bloc-page {
+  margin: auto;
   max-width: 1920px;
   position: relative;
-  margin: auto;
-  z-index: 1;
   font-family: "Roboto", sans-serif;
   background-color: white;
 }
@@ -359,15 +355,16 @@ li {
   }
 }
 .spin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  animation: disappear 3s ease-in-out;
 }
 .spin-container .spin {
   position: absolute;
@@ -426,15 +423,15 @@ header .off {
 }
 
 footer {
-  background-color: #2f2f2f;
   color: white;
   padding: 1rem;
+  background-color: #2f2f2f;
 }
 footer h2 {
-  font-family: "Shrikhand", cursive;
   font-size: 1rem;
   font-weight: normal;
   padding-bottom: 0.5rem;
+  font-family: "Shrikhand", cursive;
 }
 footer ul {
   list-style: none;
@@ -443,8 +440,8 @@ footer ul li {
   padding-bottom: 0.32em;
 }
 footer ul li a {
-  font-size: 0.9rem;
   color: white;
+  font-size: 0.9rem;
 }
 footer ul li a:hover {
   font-weight: bold;
@@ -536,8 +533,8 @@ footer ul li a:hover {
   left: 0;
   opacity: 0;
   border-radius: 10rem;
-  background-color: #FF79DA;
-  transition: opacity 400ms;
+  background: #ff46cc;
+  transition: opacity 330ms;
 }
 
 .heart-btn {

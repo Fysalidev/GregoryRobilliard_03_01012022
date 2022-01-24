@@ -1,12 +1,14 @@
 /* #### Spinner Loader #### */
 
-@keyframes spin-container{
+@keyframes disappear{
   0%{
     opacity: 1;
   }
-  99%{
+  
+  50%{
     opacity: 1;
   }
+
   100%{
     opacity: 0;
   }
@@ -17,13 +19,11 @@
     opacity: 0;
   }
   
-  90%{
-    transition: scale(0);
+  50%{
     opacity: 0;
   }
 
   100%{
-    transition: scale(1);
     opacity: 1;
   }
 }
