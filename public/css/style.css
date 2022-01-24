@@ -5,11 +5,9 @@
     opacity: 1;
   }
   50% {
-    transition: scale(0);
     opacity: 1;
   }
   100% {
-    transition: scale(1);
     opacity: 0;
   }
 }
@@ -18,11 +16,9 @@
     opacity: 0;
   }
   50% {
-    transition: scale(0);
     opacity: 0;
   }
   100% {
-    transition: scale(1);
     opacity: 1;
   }
 }
@@ -59,9 +55,8 @@
 }
 
 a {
-  text-decoration: none;
   margin: 0;
-  /* font-family: $ft-text; */
+  text-decoration: none;
 }
 
 li {
@@ -69,10 +64,9 @@ li {
 }
 
 .bloc-page {
+  margin: auto;
   max-width: 1920px;
   position: relative;
-  margin: auto;
-  z-index: 1;
   font-family: "Roboto", sans-serif;
   background-color: white;
 }
@@ -429,15 +423,15 @@ header .off {
 }
 
 footer {
-  background-color: #2f2f2f;
   color: white;
   padding: 1rem;
+  background-color: #2f2f2f;
 }
 footer h2 {
-  font-family: "Shrikhand", cursive;
   font-size: 1rem;
   font-weight: normal;
   padding-bottom: 0.5rem;
+  font-family: "Shrikhand", cursive;
 }
 footer ul {
   list-style: none;
@@ -446,8 +440,8 @@ footer ul li {
   padding-bottom: 0.32em;
 }
 footer ul li a {
-  font-size: 0.9rem;
   color: white;
+  font-size: 0.9rem;
 }
 footer ul li a:hover {
   font-weight: bold;
@@ -539,8 +533,8 @@ footer ul li a:hover {
   left: 0;
   opacity: 0;
   border-radius: 10rem;
-  background-color: #FF79DA;
-  transition: opacity 400ms;
+  background: #ff46cc;
+  transition: opacity 330ms;
 }
 
 .heart-btn {
