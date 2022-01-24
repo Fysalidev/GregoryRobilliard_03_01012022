@@ -10,11 +10,12 @@
         
         &:hover{
             color:$co-primary;
-            background: -webkit-linear-gradient($co-gradient);
-            background-clip: text;
             opacity: 0.8;
             transform-origin: bottom;
             transition-duration: 1s;
+            // background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
+            background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
+            background-clip: text;
         }
     }
     
