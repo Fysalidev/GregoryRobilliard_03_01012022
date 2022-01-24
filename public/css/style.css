@@ -67,10 +67,12 @@ li {
 }
 
 .bloc-page {
-  position: relative;
   max-width: 1920px;
+  position: relative;
   margin: auto;
+  z-index: 1;
   font-family: "Roboto", sans-serif;
+  background-color: white;
 }
 
 .page-title {
@@ -129,6 +131,7 @@ li {
   flex-direction: column;
   align-items: flex-start;
   padding: 0rem 1rem;
+  z-index: 1;
 }
 .stepbystep__container {
   width: 100%;
@@ -356,63 +359,48 @@ li {
   }
 }
 .spin-container {
-  width: 100%;
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: -1;
-  opacity: 0;
-  text-align: center;
-  margin-top: 95px;
-  animation: spin-container 5s ease-in-out;
-  /*  display: flex;
-   justify-content: center;
-   align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .spin-container .spin {
-  border: 3px solid #9356DC;
+  position: absolute;
+  border-radius: 50%;
+}
+.spin-container .spin.loader-1 {
   width: 200px;
   height: 200px;
-  margin: 0 auto;
-  border-radius: 50%;
+  border: 3px solid #9356DC;
   border-left-color: transparent;
   border-right-color: transparent;
   animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
 }
-.spin-container #loader2 {
-  border: 3px solid #FF79DA;
+.spin-container .spin.loader-2 {
   width: 220px;
   height: 220px;
-  position: relative;
-  top: -216px;
+  border: 3px solid #FF79DA;
   border-left-color: transparent;
   border-right-color: transparent;
   animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
 }
-.spin-container #loader3 {
+.spin-container .spin.loader-3 {
   border: 3px solid #99E2D0;
   width: 240px;
   height: 240px;
-  position: relative;
-  top: -452px;
   border-left-color: transparent;
   border-right-color: transparent;
   animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
 }
-.spin-container #loader4 {
-  border: 3px solid #9356DC;
-  width: 260px;
-  height: 260px;
-  position: relative;
-  top: -708px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
-}
-.spin-container #text {
+.spin-container .loader-title {
   color: black;
+  font-size: 1.1rem;
   font-family: "Shrikhand", cursive;
-  font-size: 1rem;
-  position: relative;
-  top: -857px;
 }
 
 header {
