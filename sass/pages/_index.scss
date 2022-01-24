@@ -16,9 +16,9 @@
     &__location{
         @include flex-center-center;
         text-align: center;
-        background-color: $co-grey_dark;
         color: rgb(47, 47, 47);
         padding: 1rem 0rem 1rem 0;
+        background-color: $co-grey_dark;
     
         i{
             font-size: 1.1rem;
@@ -69,7 +69,7 @@
             align-items: center;
             z-index: 1;
             cursor: default;
-            background-color: $bg-grey_clear;
+            background-color: $co-grey_clear;
             border-radius: 1rem;
             padding: 1rem;
             margin: 1rem 0rem;
@@ -82,7 +82,7 @@
             }
 
             &:hover > i {
-                color: $bg-primary;
+                color: $co-primary;
             }
             
             &::after{
@@ -121,7 +121,7 @@
                 font-size: 0.8rem;
                 font-weight: 500;
                 border-radius: 100%;
-                background-color: $bg-primary;
+                background-color: $co-primary;
             }
             
         }

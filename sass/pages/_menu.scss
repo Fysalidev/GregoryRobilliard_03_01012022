@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem 4rem 1rem;
-    background-color: $bg-grey_clear;
+    background-color: $co-grey_clear;
     border-radius: 2rem 2rem 0rem 0rem;
 
     h2{
@@ -55,7 +55,7 @@
     padding: 1rem;
     border-radius: 0.75rem;
     margin: 1rem 0rem 1rem 0rem;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.20),3px 3px 6px rgba(0, 0, 0, 0.10);
+    box-shadow: $box-shadow;
     overflow: hidden;
     transition: 500ms;
 	animation: slide-top 0.5s ease-in-out both;
@@ -77,7 +77,7 @@
     }
     
     &:hover{
-        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.20),3px 3px 12px rgba(0, 0, 0, 0.10);
+        box-shadow: $box-shadow-over;
     }
 
     &:hover > .menu-card__validation{
@@ -120,7 +120,7 @@
     }
 
     &__validation {
-        background-color: $bg-tertiary;
+        background-color: $co-tertiary;
         margin: -1rem -5rem -1rem 1rem;
         width: 4rem;
         display:flex;
