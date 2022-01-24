@@ -1,27 +1,13 @@
 .heart-btn{
     cursor: pointer;
     @include flex-center-center;
-
-    &:hover > .heart-btn__bg{
-        opacity: 1;
-        transform-origin: bottom;
-        transition-duration: 1s;
-        background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
-        -webkit-background-clip: text;
-    }
-
-    &:hover > .heart-btn__border{
-        opacity: 0;
-        transform-origin: left;
-        transition-duration: 1s;
-    }
+    
     
     &__bg{
         position: absolute;
         color: transparent;
         font-size: 1.5rem;
         z-index: 4;
-        
     }
     
     &__border{
@@ -30,5 +16,15 @@
         font-size: 1.5rem;
         background-color: transparent;
         color: black;
+    }
+    
+    &:hover > .heart-btn__bg{
+        opacity: 1;
+        background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
+        -webkit-background-clip: text;
+    }
+    
+    &:hover > .heart-btn__border{
+        opacity: 0;
     }
 }

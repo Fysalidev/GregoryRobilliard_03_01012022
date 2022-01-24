@@ -542,18 +542,6 @@ footer ul li a:hover {
   justify-content: center;
   align-items: center;
 }
-.heart-btn:hover > .heart-btn__bg {
-  opacity: 1;
-  transform-origin: bottom;
-  transition-duration: 1s;
-  background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-}
-.heart-btn:hover > .heart-btn__border {
-  opacity: 0;
-  transform-origin: left;
-  transition-duration: 1s;
-}
 .heart-btn__bg {
   position: absolute;
   color: transparent;
@@ -566,6 +554,14 @@ footer ul li a:hover {
   font-size: 1.5rem;
   background-color: transparent;
   color: black;
+}
+.heart-btn:hover > .heart-btn__bg {
+  opacity: 1;
+  background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+}
+.heart-btn:hover > .heart-btn__border {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
