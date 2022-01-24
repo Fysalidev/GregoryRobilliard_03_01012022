@@ -1,23 +1,27 @@
 /* #### Spinner Loader #### */
 
-@keyframes spin-container{
+@keyframes disappear{
   0%{
     opacity: 1;
   }
-  99%{
+  
+  50%{
+    transition: scale(0);
     opacity: 1;
   }
+
   100%{
+    transition: scale(1);
     opacity: 0;
   }
 }
 
-@keyframes main{
+@keyframes reveal{
   0%{
     opacity: 0;
   }
   
-  90%{
+  50%{
     transition: scale(0);
     opacity: 0;
   }

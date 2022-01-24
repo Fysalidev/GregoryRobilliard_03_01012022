@@ -1,21 +1,23 @@
 /* Background Colors */
 /* #### Spinner Loader #### */
-@keyframes spin-container {
+@keyframes disappear {
   0% {
     opacity: 1;
   }
-  99% {
+  50% {
+    transition: scale(0);
     opacity: 1;
   }
   100% {
+    transition: scale(1);
     opacity: 0;
   }
 }
-@keyframes main {
+@keyframes reveal {
   0% {
     opacity: 0;
   }
-  90% {
+  50% {
     transition: scale(0);
     opacity: 0;
   }
@@ -84,7 +86,7 @@ li {
 .reveal {
   opacity: 1;
   z-index: 1;
-  animation: main 3s ease-in-out;
+  animation: reveal 3s ease-in-out;
 }
 
 .hero {
@@ -359,15 +361,16 @@ li {
   }
 }
 .spin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  animation: disappear 3s ease-in-out;
 }
 .spin-container .spin {
   position: absolute;
