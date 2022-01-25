@@ -2,21 +2,24 @@
     cursor: pointer;
     @include flex-center-center;
     
+    &__border{
+        position: absolute;
+        font-size: 1.5rem;
+        color: black;
+    }
+
     &__bg{
         position: absolute;
         font-size: 1.5rem;
-        z-index: 2;
         opacity:0;
         background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
         -webkit-background-clip: text;
         color: transparent;
     }
     
-    &__border{
-        position: absolute;
-        font-size: 1.5rem;
-        z-index: 1;
-        color: black;
+    &:hover > .heart-btn__border{
+        opacity: 0;
+        transition-duration: 250ms;
     }
     
     &:hover > .heart-btn__bg{
@@ -24,8 +27,4 @@
         transition-duration: 450ms;
     }
     
-    &:hover > .heart-btn__border{
-        opacity: 0;
-        transition-duration: 250ms;
-    }
 }

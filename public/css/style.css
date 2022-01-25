@@ -542,28 +542,26 @@ footer ul li a:hover {
   justify-content: center;
   align-items: center;
 }
+.heart-btn__border {
+  position: absolute;
+  font-size: 1.5rem;
+  color: black;
+}
 .heart-btn__bg {
   position: absolute;
   font-size: 1.5rem;
-  z-index: 2;
   opacity: 0;
   background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
   color: transparent;
 }
-.heart-btn__border {
-  position: absolute;
-  font-size: 1.5rem;
-  z-index: 1;
-  color: black;
+.heart-btn:hover > .heart-btn__border {
+  opacity: 0;
+  transition-duration: 250ms;
 }
 .heart-btn:hover > .heart-btn__bg {
   opacity: 1;
   transition-duration: 450ms;
-}
-.heart-btn:hover > .heart-btn__border {
-  opacity: 0;
-  transition-duration: 250ms;
 }
 
 /*# sourceMappingURL=style.css.map */
